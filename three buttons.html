@@ -1,0 +1,68 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>CSS</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			background-color: lightgreen;
+			text-align: center;
+			padding-top: 200px;
+		}
+
+		.h1{
+			font-size: 50px;
+		}
+
+		.myButton{
+			height: 40px;
+			width: 100px;
+			border: none;
+            color: white;
+		}
+
+		#btn1{
+			background-color: maroon;
+		}
+
+		#btn2{
+			background-color: purple;
+		}
+
+		#btn3{
+			background-color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<h1 class="h1">You Have Not Clicked Any Button</h1>
+	<button class="myButton" id="btn1">Button 1</button>
+	<button class="myButton" id="btn2">Button 2</button>
+	<button class="myButton" id="btn3">Button 3</button>
+
+	<script type="text/javascript">
+		document.querySelectorAll(".myButton")[0].addEventListener("click", function(){
+			var text= this.innerHTML;
+			document.querySelector("h1").innerHTML= text+" is clicked";
+		});
+
+		document.querySelectorAll(".myButton")[1].addEventListener("click", function(){
+			var text= this.innerHTML;
+			document.querySelector("h1").innerHTML= text+" is clicked";
+		});
+
+		document.querySelectorAll(".myButton")[2].addEventListener("click", function(){
+			var text= this.innerHTML;
+			document.querySelector("h1").innerHTML= text+" is clicked";
+		});
+	</script>
+</body>
+</html>
+
+
+
+

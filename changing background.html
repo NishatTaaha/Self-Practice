@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+	<style type="text/css">
+		.btn{
+			height: 40px;
+			min-width: 100px;
+			background-color: inherit;
+			border: 2px solid grey;
+			color: grey;
+			border-radius: 4px;
+			margin-left: 600px;
+			margin-top: 300px;
+		}
+
+		.btn :hover{
+			background-color: grey;
+			border: 2px solid grey;
+			color: grey;
+		}
+	</style>
+</head>
+<body>
+	<div class="full">
+		<button class="btn">Click Me!</button>
+	</div>
+
+	<script>
+		const button= document.querySelector("button");
+		const body= document.querySelector("body");
+		const colors=["red","green","yellow","violet","maroon","purple"];
+
+		body.style.backgroundColor="violet"
+		button.addEventListener("click", changeBackground)
+        
+        function changeBackground(){
+        	const colorIndex= parseInt(Math.random()*colors.length)
+        	body.style.backgroundColor= colors[colorIndex]
+        }
+
+	</script>
+
+</body>
+</html>

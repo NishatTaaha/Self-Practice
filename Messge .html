@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css</title>
+	<style type="text/css">
+		body{
+			background-color: #7095b6;
+			font-family: sans-serif;
+		}
+
+		.container{
+			background-color: rgb(240, 240, 240);
+			height: 300px;
+			width: 750px;
+			margin-left: 300px;
+			margin-top: 200px;
+			text-align: center;
+			/*padding: 10px;*/
+			/*font-size: 30px;*/
+			/*padding-top: 5px;*/
+			/*margin-top: 10px;*/
+		}
+
+		#first{
+			/*margin-top: 20px;*/
+			padding-top: 18px;
+			font-size: 22px;
+			font-weight: 4px;
+			font-weight: bold;
+			/*font-style: inherit;*/
+			/*font*/
+		}
+
+		.message-form{
+			/*display: inline-grid;*/
+			align-items: center;
+		}
+
+		#submitBtn{
+			margin-top: 20px;
+			height: 50px;
+			/*max-width: 100px;*/
+			min-width: 110px;
+			border-radius: 4px;
+			border-color: #7095b6;
+			background-color: #7095b6;
+			font-size: 20px;
+			color: white;
+		}
+
+		#submitBtn:hover{
+			color: black;
+		}
+
+		#message{
+			height: 40px;
+			width: 700px;
+			/*border-radius: 4px;*/
+			/*border-color: inherit;*/
+		}
+
+		#second{
+			/*font-size: 22px;*/
+			/*margin-top: 20px;*/
+			/*background: red;*/
+			display: none;
+		}
+
+		#third{
+			font-size: 22px;
+			font-weight: 4px;
+			font-weight: bold;
+			margin-top: 18px;
+		}
+
+		#forth{
+			font-size: 27px;
+			font-weight: 4px;
+			font-weight: bold;
+			color: #7095b6;
+			/*text-decoration-style: capitalize;*/
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p class="text-capitalize" id="first">A Messge You Would Like To Pass</p>
+		<form action="" id="message-form">
+			<input type="text" id="message" class="w-100 my-3 p-2">
+			<input type="submit" id="submitBtn" class="btn btn-lg">
+		</form>
+		<h5 class="p-2 alert alert-danger my-3 text-capitalize feedback" id="second">please enter a value to pass</h5>
+		<p class="text-capitalize my-3" id="third">Last Message Delivered</p>
+		<p class="message-content text-uppercase" id="forth">Hello World</p>
+	</div>
+
+	<script type="text/javascript">
+		(function(){
+			const form= document.querySelector("#message-form")
+			form.addEventListener("submit", function(e){
+				e.preventDefault()
+
+				const message= document.querySelector("#message")
+				const feedback= document.querySelector(".feedback")
+				const messageContent= document.querySelector(".message-content")
+
+				if(message.value===""){
+					feedback.classList.add("show")
+					// setTimeout(function(){
+					// 	feedback.classList.remove("show")
+					// },2000)
+				}
+				else{
+					messageContent.textContent=message.value
+					message.value=""
+				}
+			})
+		})()
+	</script>
+
+</body>
+</html>

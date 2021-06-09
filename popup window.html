@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style type="text/css">
+		*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: rgba(19, 19, 23, 0.9);
+}
+section{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSCX7Oi44ppRIySJo4ZaQwcJDaZRaArDQN-Q&usqp=CAU");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  /* filter: blur(6px); */
+}
+.center{
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  margin: 40px;
+  text-transform: capitalize;
+}
+
+button{
+  margin: 0 auto;
+  height: 60px;
+  width: 500px;
+  background: #5454ff;
+  border: none;
+  border-radius: 6px;
+  font-size: 25px;
+  color: #000;
+  cursor: pointer;
+}
+
+		.modal-parent{
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100vh;
+			width: 100%;
+		}
+
+		.modal{
+			background: white;
+			width: 70%;
+			padding: 30px;
+			border-radius: 6px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+            font-size: 22px;
+            font-family: arial;
+            position: relative;
+            animation: 2s drop;
+		}
+
+		@keyframes drop {
+            0%{
+              top: 100px;
+            }
+            100%{
+              top: 50%;
+            }
+          }
+          .X{
+            position: absolute;
+            right: 20px;
+            top: 5px;
+            font-size: 40px;
+            cursor: pointer;
+          }
+          section{
+            transition: 2s;
+          }
+
+
+	</style>
+</head>
+<body>
+	<section>
+		<div class="center">
+			<h1>click the button below to pop a window</h1>
+			<button type="button">Click for Modal</button>
+		</div>
+	</section>
+
+	<div class="modal-parent">
+		<div class="modal">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Tincidunt vitae semper quis lectus. Sed blandit libero volutpat sed cras. Maecenas sed enim ut sem viverra aliquet. Lorem donec massa sapien faucibus et molestie. Eget nullam non nisi est sit amet facilisis magna. Egestas congue quisque egestas diam. Senectus et netus et malesuada fames ac. Pharetra vel turpis nunc eget lorem dolor sed. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Malesuada pellentesque elit eget gravida. Proin sed libero enim sed faucibus turpis. Nisi est sit amet facilisis magna. Neque ornare aenean euismod elementum nisi quis eleifend quam. Ornare massa eget egestas purus viverra accumsan in nisl. Et netus et malesuada fames. Quis lectus nulla at volutpat diam ut venenatis tellus in. Metus vulputate eu scelerisque felis imperdiet proin. Ac tortor dignissim convallis aenean et. Elit pellentesque habitant morbi tristique sen</p>
+
+			<span class="X">&times;</span>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var parent=document.querySelector(".modal-parent"),
+		btn= document.querySelector("button"),
+		X= document.querySelector(".X");
+		section= document.querySelector("section")
+
+		btn.addEventListener("click", appear);
+		function appear(){
+			parent.style.display= "block";
+			section.style.filter="blur(10px)"
+		}
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style>
+		body{
+			font-family: cursive;
+			margin: 0;
+			
+		}
+
+		.top{
+			display: inline-flex;
+			/*min-height: 40px*/
+			min-width: 100%;
+			/*background-color: white;*/
+		}
+
+
+
+		.img-1{
+			margin-top: 8px;
+			size: 100px;
+		}
+
+		.ul-1{
+			display: inline-flex;
+			list-style: none;
+			margin-left: 200px;
+		}
+
+		.li-anc{
+			margin-left: 23px;
+			text-decoration: none;
+			font-size: 21px;
+			color:  #ef7998;
+			transition: all 0.5s ease-in-out;
+		}
+
+		.li-anc:hover{
+			color: black;
+		}
+
+		.phn{
+			margin-left: 340px;
+			font-size: 21px;
+			margin-top: 15px;
+		}
+
+		.btn{
+			height: 40px;
+			width: 180px;
+			margin-left: 90px;
+			/*font-style: "Kaushan Script", cursive;*/
+			margin-top: 10px;
+			font-size: 17px;
+			font-weight: 2px;
+			font-family: "Kaushan Script", cursive;
+			background-color: inherit;
+			border-radius: 5px;
+		}
+
+		.btn:hover{
+			background-color: #ef7998;
+			color: white;
+			border: none;
+		}
+
+		.second{
+		    background-image: url("https://raw.githubusercontent.com/romeojeremiah/Filter-Project/00e4d3c4ab123d7b75f1be0a9bcc7a8ceff035de/img/headerBcg.jpeg");
+	        background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			position: 100%;
+			height: 800px;
+			/*margin-top: 70px;*/
+		}
+
+		.head{
+			text-align: center;
+			padding-top: 200px;
+		}
+
+		.h1{
+			/*height: 40px;*/
+			font-size: 40px;
+			color: white;
+			/*margin-top: 200px;*/
+		}
+
+		.str{
+			font-size: 60px;
+			color: #ef7998;
+
+		}
+
+		.btn-2{
+			height: 50px;
+			width: 135px;
+			background-color: inherit;
+			font-size: 24px;
+			font-family: cursive;
+			border: 4px solid black;
+
+		}
+
+		.btn-2:hover{
+			background-color: black;
+			color: #ef7998;
+			/*font-size: 21px;*/
+		}
+
+		.det{
+			/*margin-top: 800px;*/
+		}
+
+		.h1-2{
+			font-size: 35px;
+		}
+
+		.str-1{
+			font-size: 50px;
+			color: #ef7998;
+		}
+
+		.about{
+			display: inline-flex;
+		}
+
+		.det{
+			/*text-align: center;*/
+		    /*display: flex;*/
+		    /*display: inline-block;*/
+		    margin-top: 50px;
+		    margin-left: 50px;
+		    margin-right: 70px;
+		}
+
+		.btn-3{
+			height: 45px;
+			min-width: 90px;
+			border: 4px solid grey;
+			border-radius: 4px;
+			background-color: white;
+			font-size: 16px;
+			font-family: cursive;
+
+		}
+
+		.para-ab{
+			color: grey;
+			margin-right: 100px;
+		}
+
+		.btn-3:hover{
+			background-color: black;
+			color: #ef7998;
+		}
+
+        .im{
+        	height: 370px;
+        	margin-right: 90px;
+        	margin-top: 50px;
+        	position: relative;
+        }
+
+        .im::before{
+        	content: "";
+        	position: absolute;
+        	top: -1.5rem;
+        	left: -1.7rem;
+        	width: 100%;
+        	height: 100%;
+        	outline: .5rem solid rgb(249, 228, 148);
+        	z-index: -1;
+        	transition: all 1s ease-in-out;
+        }
+
+        .im:hover:before{
+        	top: 0;
+            left: 0;
+        }
+
+        .every{
+        	text-align: center;
+        }
+
+        .anc{
+        	/*font-family: cursive;*/
+        }
+
+        .but{
+        	font-family: cursive;
+        	height: 40px;
+        	/*width: 100px;*/
+        	background-color: inherit;
+            border: 1px solid black;
+            font-size: 18px;
+            margin-left: 30px;
+            border-radius: 4px;
+        }
+
+        .but:hover{
+        	background-color: black;       
+        	color:  #ef7998;
+        }
+
+        .items{
+        	/*text-align: center;*/
+
+        }
+
+        .h1-3{
+        	font-size: 40px;
+        }
+
+        .store{
+        	font-size: 60px;
+        	color: #ef7998;
+        }
+
+        .form-control{
+        	height: 30px;
+        	min-width: 450px;
+        	margin-top: 30px;
+            font-family: cursive;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+
+        .icon-img{
+        	height: 40px;
+        	width: 40px;
+        	/*padding-top: 30px;*/
+        	/*margin-bottom: 0;*/
+        }
+
+        .icon{
+        	display: inline-flex;
+        }
+
+        .every{
+        	background-color: rgb(238, 238, 238);
+        }
+
+        .first-cards{
+        	display: inline-flex;
+        	/*text-align: center;*/
+        	/*align-items: center;*/
+        	margin-left: 60px;
+        	margin-top: 70px;
+        }
+
+        .gallery{
+        	background-color: rgb(238, 238, 238);
+        }
+
+        .card{
+        	margin-left: 60px;
+        	height: 350px;
+        	background-color: white;
+        	justify-content: center;
+        	width: 340px;
+        }
+
+        .item-name{
+        	display: inline-flex;
+        }
+
+        .item-name{
+        	font-size: 20px;
+        }
+
+        .cost{
+        	/*margin-left: 180px;*/
+        	/*font-size: 20px;*/
+        }
+
+        .tag{
+        	margin-left: 20px;
+        }
+
+        .store-item-icon {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 0.75rem;
+            background: var(--mainYellow);
+            border-top-left-radius: 1rem;
+            transition: all 1s ease-in-out;
+            transform: translate(100%, 100%);
+        }
+
+        .store-item-icon {
+            transform: translate(0, 0);
+        }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="top">
+			<img src="https://raw.githubusercontent.com/romeojeremiah/Filter-Project/00e4d3c4ab123d7b75f1be0a9bcc7a8ceff035de/img/logo.svg" class="img-1">
+
+			<ul class="ul-1">
+				<li><a href="#" class="li-anc">Home</a></li>
+				<li><a href="#" class="li-anc">About</a></li>
+				<li><a href="#" class="li-anc">Store</a></li>
+			</ul>
+
+			<p class="phn">+ 123 456 789</p>
+
+			<button class="btn">2 Items-$10.49</button>
+		</div>
+
+
+		<div class="second">
+			<div class="head">
+				<h1 class="h1">Welcome To <strong class="str">Grandma's</strong></h1>
+				<button class="btn-2">EXPLORE</button>
+			</div>
+		</div>
+    </div>
+
+
+    <div class="mid">
+		<div class="about">
+			<div class="det">
+				<h1 class="h1-2">About <strong class="str-1">Us</strong></h1>
+				<p class="para-ab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis porro at dolorum! Ad!</p>
+				<button class="btn-3">EXPLORE</button>
+			</div>
+
+			<div class="img-3">
+				<img src="https://raw.githubusercontent.com/romeojeremiah/Filter-Project/00e4d3c4ab123d7b75f1be0a9bcc7a8ceff035de/img/sweets-1.jpeg" class="im"><br><br><br><br>
+			</div>
+		</div>
+    </div>
+
+
+    <div class="every">
+    	<h1 class="h1-3">Our <strong class="store">Store</strong></h1>
+    	<div class="items">
+    		<a href="#" class="anc"><button class="but">ALL</button></a>
+    		<a href="#" class="anc"><button class="but">CAKES</button></a>
+    		<a href="#" class="anc"><button class="but">CUPCAKES</button></a>
+    		<a href="#" class="anc"><button class="but">SWEETS</button></a>
+    		<a href="#" class="anc"><button class="but">DOUGHNUTS</button></a>
+    	</div>
+
+        <form> 
+            <div class="icon">
+       
+    	        <input type="text" class="form-control" placeholder='item....' id="search-item">
+    	    </div>
+        </form>
+    </div>
+
+    <div class="gallery">
+    	<div class="first-cards">
+    	    <div class="card">
+    		    <div class="card-img">
+    			    <img src="https://romeojeremiah.github.io/Filter-Project/img/sweets-1.jpeg" height="260px" width="340px">
+    			    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <div class="item-name">
+                  	    <p class="tag">Sweet Item ==></p>
+                  	    <p class="cost">$5</p>
+                    </div>
+    		    </div>
+    	    </div>
+
+    	    <div class="card">
+    		    <div class="card-img">
+    			    <img src="https://romeojeremiah.github.io/Filter-Project/img/cupcake-1.jpeg" height="260px" width="340px">
+    			    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <div class="item-name">
+                  	    <p class="tag">Cupcake Item ==></p>
+                  	    <p class="cost">$5</p>
+                    </div>
+    		    </div>
+    	    </div>
+
+    	    <div class="card">
+    		    <div class="card-img">
+    			    <img src="https://romeojeremiah.github.io/Filter-Project/img/cake-1.jpeg" height="260px" width="340px">
+    			    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <div class="item-name">
+                  	    <p class="tag">Cake Item ==></p>
+                  	    <p class="cost">$5</p>
+                    </div>
+    		    </div>
+    	    </div>
+    	</div>
+
+
+    	<div class="first-cards">
+    	    <div class="card">
+    		    <div class="card-img">
+    			    <img src="https://romeojeremiah.github.io/Filter-Project/img/doughnut-1.jpeg" height="260px" width="340px">
+    			    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <div class="item-name">
+                  	    <p class="tag">Dougnut Item ==></p>
+                  	    <p class="cost">$5</p>
+                    </div>
+    		    </div>
+    	    </div>
+
+    	    <div class="card">
+    		    <div class="card-img">
+    			    <img src="https://romeojeremiah.github.io/Filter-Project/img/sweets-2.jpeg" height="260px" width="340px">
+    			    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <div class="item-name">
+                  	    <p class="tag">Sweet Item ==></p>
+                  	    <p class="cost">$5</p>
+                    </div>
+    		    </div>
+    	    </div>
+
+    	    <div class="card">
+    		    <div class="card-img">
+    			    <img src="https://romeojeremiah.github.io/Filter-Project/img/cupcake-2.jpeg" height="260px" width="340px">
+    			    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <div class="item-name">
+                  	    <p class="tag">Cupcake Item ==></p>
+                  	    <p class="cost">$5</p>
+                    </div>
+    		    </div>
+    	    </div>
+    	</div>
+
+
+    	<div class="first-cards">
+    	    <div class="card">
+    		    <div class="card-img">
+    			    <img src="https://romeojeremiah.github.io/Filter-Project/img/cake-2.jpeg" height="260px" width="340px">
+    			    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <div class="item-name">
+                  	    <p class="tag">Cake Item ==></p>
+                  	    <p class="cost">$5</p>
+                    </div>
+    		    </div>
+    	    </div>
+
+    	    <div class="card">
+    		    <div class="card-img">
+    			    <img src="https://romeojeremiah.github.io/Filter-Project/img/doughnut-2.jpeg" height="260px" width="340px">
+    			    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <div class="item-name">
+                  	    <p class="tag">Doughnut Item ==></p>
+                  	    <p class="cost">$5</p>
+                    </div>
+    		    </div>
+    	    </div>
+
+    	    <div class="card">
+    		    <div class="card-img">
+    			    <img src="https://romeojeremiah.github.io/Filter-Project/img/sweets-3.jpeg" height="260px" width="340px">
+    			    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <div class="item-name">
+                  	    <p class="tag">Sweet Item ==></p>
+                  	    <p class="cost">$5</p>
+                    </div>
+    		    </div>
+    	    </div>
+    	</div>
+
+
+
+    	<div class="first-cards">
+    	    <div class="card">
+    		    <div class="card-img">
+    			    <img src="https://romeojeremiah.github.io/Filter-Project/img/cupcake-3.jpeg" height="260px" width="340px">
+    			    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <div class="item-name">
+                  	    <p class="tag">Sweet Item ==></p>
+                  	    <p class="cost">$5</p>
+                    </div>
+    		    </div>
+    	    </div>
+
+    	    <div class="card">
+    		    <div class="card-img">
+    			    <img src="https://romeojeremiah.github.io/Filter-Project/img/cake-3.jpeg" height="260px" width="340px">
+    			    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <div class="item-name">
+                  	    <p class="tag">Cake Item ==></p>
+                  	    <p class="cost">$5</p>
+                    </div>
+    		    </div>
+    	    </div>
+
+    	    <div class="card">
+    		    <div class="card-img">
+    			    <img src="https://romeojeremiah.github.io/Filter-Project/img/doughnut-3.jpeg" height="260px" width="340px">
+    			    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <div class="item-name">
+                  	    <p class="tag">Doughnut Item ==></p>
+                  	    <p class="cost">$5</p>
+                    </div>
+    		    </div>
+    	    </div>
+    	</div>
+    </div>
+
+    <script type="text/javascript">
+    	const buttons= document.querySelectorAll(".btn")
+    	const storeItems= document.querySelectorAll("store-item")
+    </script>
+</body>
+</html>

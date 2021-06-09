@@ -1,0 +1,1222 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>full screen landing</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			margin: 0;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 17px;
+			color: #926239;
+			line-height: 1.6;
+		}
+
+		#showcase{
+			background-image: url('http://traversymedia.com/downloads/assets/beachshowcase.jpg');
+			background-size: cover;
+			background-position: center;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			padding: 0 20px;
+		}
+
+		#showcase h1{
+			font-size: 50px;
+			line-height: 1.2;
+		}
+
+		#showcase p{
+			font-size: 20px;
+		}
+
+		#showcase .button{
+			font-size: 18px;
+			text-decoration: none;
+			color: #926239;
+			border: #926239 1px solid;
+			padding: 10px 20px;
+			border-radius: 10px;
+			margin-top: 20px;
+		}
+
+		#showcase .button:hover{
+			background: #926239;
+			color: #fff;
+		}
+
+		#section-a{
+			padding: 20px;
+			background: #926239;
+			color: #fff;
+			text-align: center;
+		}
+
+		#section-b{
+			padding: 20px;
+			background: #f4f4f4;
+			text-align: center;
+		}
+
+		#section-c{
+			display: flex;
+		}
+
+		#section-c div{
+			padding: 20px;
+		}
+
+		#section-c .box-1, #section-c .box-3{
+			background: #926239;
+			color: white;
+		}
+
+		#section-c .box-2{
+			background: #f9f9f9;
+		}
+	</style>
+</head>
+<body>
+	<header id="showcase" class="show" style="border: 1px solid maroon; color: orange;" onclick="xyz()">
+		<h1>Welcome To The Beach</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
+		<a href="#" class="button">read More</a>
+	</header>
+
+	<section id="section-a">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat, placeat iste facere, aspernatur ex cum veritatis laudantium, officia, non porro exercitationem incidunt quis dolore? Officia ex accusamus expedita optio, voluptatem minus? In maiores omnis aperiam earum ab molestiae beatae laborum blanditiis incidunt, delectus dolor, id voluptates optio aspernatur aliquam saepe atque labore? Tempore reprehenderit ab ipsam perspiciatis ut, provident perferendis sapiente in numquam blanditiis, enim, illo error nulla incidunt quos quidem ratione repellat ipsa molestias veritatis? Mollitia, fugit dolore commodi porro repudiandae atque, eos, ipsum quam culpa fuga deleniti quae.</p>
+	</section>
+
+	<section id="section-b">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus impedit maxime, quae soluta quis
+            cumque perferendis! Doloribus quaerat, placeat iste facere, aspernatur ex cum veritatis laudantium,
+            officia, non porro exercitationem incidunt quis dolore? Officia ex accusamus expedita optio, voluptatem
+            minus? In maiores omnis aperiam earum ab molestiae beatae laborum blanditiis incidunt, delectus dolor, id
+            voluptates optio aspernatur aliquam saepe atque labore? Tempore reprehenderit ab ipsam perspiciatis ut,
+            provident perferendis sapiente in numquam blanditiis, enim, illo error nulla incidunt quos quidem ratione
+            repellat ipsa molestias veritatis? Mollitia, fugit dolore commodi porro repudiandae atque, eos, ipsum quam
+            culpa fuga deleniti quae.</p>
+	</section>
+
+	<section id="section-c">
+		<div class="box-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
+		</div>
+		<div class="box-2">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
+		</div>
+		<div class="box-3">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
+		</div>
+	</section>
+
+	<script>
+		var element;
+		document.getElementById("showcase").addEventListener("click",abc);
+
+		function abc(){
+			var a=document.getElementById("header")
+		}
+	</script>
+</body>
+</html>
+
+ -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style>
+		#outer{
+			background-color: maroon;
+			/*background-size: 200px*/
+			height: 500px;
+			/*max-width: 300px;*/
+			max-width: 500px;
+
+		}
+
+		.one{
+			color: white;
+		}
+
+		#inner{
+			background-color: purple;
+			height: 250px;
+			/*max-width: 250px;*/
+			max-width: 250px;
+			margin-left: 125px;
+			margin-top: 100px;
+		}
+
+		.two{
+			color: white;
+			/*margin-left: 100px;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="outer">
+			<h1 class="one">Outer</h1>
+			<div id="inner">
+				<h1 class="two">Inner</h1>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		document.querySelector("#inner").addEventListener("click",function(){
+			alert("Inner Div");
+		},false);
+
+		document.querySelector("#outer").addEventListener("click", function(){
+			alert("Outer Div");
+		},false);
+	</script>
+
+</body>
+</html>
+ -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style>
+		.outer{
+			height: 400px;
+			max-width: 800px;
+			background-color: pink;
+			/*align-items: center;*/
+			margin-left: 100px;
+		}
+
+		#inner{
+			background-color: yellow;
+			height: 300px;
+			max-width: 600px;
+			margin-left: 100px;
+		}
+
+		.one{
+			background-color: pink;
+			display: inline-flex;
+			height: 70px;
+			width: 70px;
+			margin-left: 40px;
+			margin-top: 70px;
+			text-align: center;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<h2>Outer</h2>
+		<div id="inner">
+			<h2>Inner</h2>
+			<div class="one">A</div>
+			<div class="one">B</div>
+			<div id="child-c" class="one">C</div>
+			<div class="one">D</div>
+			<div class="one">E</div>
+		</div>
+	</div>
+	<script>
+		var a= document.getElementById("child-c").nextElementSibling;
+		console.log(a);
+	</script>
+
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style>
+		h1{
+			margin-left: 400px;
+		}
+
+		.box{
+			height: 400px;
+			max-width: 700px;
+			background-color: maroon;
+			margin-left: 300px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: maroon">Yahoo Baba : DOM Creat Methods</h1>
+	<div class="box"></div>
+
+
+    <script type="text/javascript">
+    	var newElement = document.createElement("h2");
+    	var newText = document.createTextNode("This is just text");
+    	newElement.appendChild(newText);
+    	document.getElementById("test").appendChild(newElement);
+    	console.log(newElement);
+    </script>
+</body>
+</html>
+
+ -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style type="text/css">
+		.box{
+			height: 400px;
+			max-width: 900px;
+			background-color: purple;
+			margin-left: 200px;
+		}
+
+		.para{
+			padding-left: 50px;
+			padding-top: 50px;
+			padding-right: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quaerat laboriosam blanditiis mollitia qui non, molestiae, minus placeat recusandae, eum cumque. Cum quia tempora vel voluptate accusamus quas deserunt dolore quo, ea eius nulla minus neque! Odit sunt tempore excepturi, at odio debitis eius! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptates, pariatur corporis recusandae illo non itaque commodi vitae consequuntur ad incidunt natus cum, eius inventore. Nihil quos, facere quia a in, libero labore enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem temporibus nesciunt consequatur quis nisi consequuntur, cumque consectetur ipsa libero quas suscipit, aliquid sint tempore voluptate id error aliquam natus doloribus dolores perspiciatis rerum!</p>
+	</div>
+
+	<script>
+		var newElement= document.createElement("h2");
+
+		var newText = document.createTextNode("this is just text");
+		newElement.appendChild(newText);
+
+		var target=document.getElementById("para");
+		target.insertAdjacentElement("afterbegin", newElement);
+
+	</script>
+
+</body>
+</html> -->
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Change the Background Color with JavaScript</title>
+<script>
+    // Function to change webpage background color
+    function changeBodyBg(color){
+        document.body.style.background = color;
+    }
+    
+    // Function to change heading background color
+    function changeHeadingBg(color){
+        document.getElementById("heading").style.background = color;
+    }
+</script>
+</head>
+<body>
+    <h1 id="heading">This is a heading</h1>
+    <p>This is a paragraph of text.</p>
+    <hr>
+    <div>
+        <label>Change Webpage Background To:</label>
+        <button type="button" onclick="changeBodyBg('yellow');">Yellow</button>
+        <button type="button" onclick="changeBodyBg('lime');">Lime</button>
+        <button type="button" onclick="changeBodyBg('orange');">Orange</button>
+    </div>
+    <br>
+    <div>
+        <label>Change Heading Background To:</label>
+        <button type="button" onclick="changeHeadingBg('red');">Red</button>
+        <button type="button" onclick="changeHeadingBg('green');">Green</button>
+        <button type="button" onclick="changeHeadingBg('blue');">Blue</button>
+    </div>
+</body>
+</html>
+ --><!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Change the Background Color with JavaScript</title>
+<script>
+    // Function to change webpage background color
+    function changeBodyBg(color){
+        document.body.style.background = color;
+    }
+    
+    // Function to change heading background color
+    function changeHeadingBg(color){
+        document.getElementById("heading").style.background = color;
+    }
+</script>
+</head>
+<body>
+    <h1 id="heading">This is a heading</h1>
+    <p>This is a paragraph of text.</p>
+    <hr>
+    <div>
+        <label>Change Webpage Background To:</label>
+        <button type="button" onclick="changeBodyBg('yellow');">Yellow</button>
+        <button type="button" onclick="changeBodyBg('lime');">Lime</button>
+        <button type="button" onclick="changeBodyBg('orange');">Orange</button>
+    </div>
+    <br>
+    <div>
+        <label>Change Heading Background To:</label>
+        <button type="button" onclick="changeHeadingBg('red');">Red</button>
+        <button type="button" onclick="changeHeadingBg('green');">Green</button>
+        <button type="button" onclick="changeHeadingBg('blue');">Blue</button>
+    </div>
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style type="text/css">
+		body{
+			background-color: #b09e99;
+			font-family: sans-serif;
+		}
+
+		.quote-container{
+			background: rgba(255, 255, 255, 0.5);
+			margin-top: 150px;
+			margin-left: 310px;
+			padding: 60px;
+			height: 300px;
+			max-width: 600px;
+			/*text-align: center;*/
+		}
+
+		.btn{
+			margin-left: 200px; 
+			height: 55px;
+			width: 220px;
+			background-color: #64b6ac;
+			color: white;
+			border-top: 2px solid #64b6ac;
+			border-left: 2px solid #64b6ac;
+			border-right: 2px solid black;
+			border-bottom: 2px solid black;
+			cursor: pointer;
+			font-size: 25px;
+		}
+
+		.btn:hover{
+			background: #b09e99;
+			border-color: #b09e99 ;
+			color: #333333;
+		}
+
+		.h3{
+			color: grey;
+			font-size: 30px;
+		}
+
+		.author{
+			font-size: 20px;
+			/*margin-left: 500px;*/
+			/*margin-top: 800px;*/
+			/*margin-right: 50px;*/
+			padding-left: 450px;
+			color: #64b6ac;
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+	<div class="quote-container">
+		<button class="btn" id="generate-btn">Generate Quote</button>
+		<h3 class="h3"><span class="quote-icon mr-3"><i class="fas fa-quote-left fa-3x"></i></span><span id="quote"><p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur sint iste optio placeat dolor labore, reprehenderit ipsum aspernatur blanditiis maiores.</p></span></h3>
+        <h5 class="author">- <span class="quote-author ml-3">Author</span></h5>
+	</div>
+
+	<script type="text/javascript">
+		(function(){
+			quotes=[
+			{
+				quote:
+				 "Life is too short and sweet to be spent by cribbing and complaining about things. Here are some random quotes about the most wonderful gift that we've got",
+				 author: "Life"
+			},
+			{
+				 quote:
+                 "Humor is richly rewarding to the person who employs it. It has some value in gaining and holding attention. But it has no persuasive value at all",
+                  author: "John Kenneth"
+			},
+			{
+				quote:
+				"God save me from my friends. I can protect myself from my enemies."
+				author:  "Claude Louis Hector de Villars "
+			},
+			{
+				quote:
+				"The price of anything is the amount of life you exchange for it."
+				author:  "David Thoreau"
+			},
+			{
+                quote:
+                 "Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance. ",
+                author: "Charles Lindbergh"
+            },
+            {
+                 quote:
+                 "A critic is someone who never actually goes to the battle, yet who afterwards comes out shooting the wounded.",
+                author: " Tyne Daly"
+             }
+			];
+
+			const btn= document.getElementById("generate-btn");
+			btn.addEventListener("click",function(){
+				let random=Math.floor(Math.random()*quotes.length);
+				console.log(random);
+				document.getElementById("quote").textContent= quotes[random].quote;
+				document.querySelector(".author").textContent= quotes[random].author;
+			});
+		})();
+	</script>
+</body>
+</html>
+
+ -->
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+</head>
+<body>
+	<p id="pid">This is taaha</p>
+	<script type="text/javascript">
+		document.getElementById("pid").innerHTML="this is eeha"
+	</script>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function square(num1,num2){
+			var result= num1**num2;
+			return result;
+		}
+
+		document.write(square(7,2))
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			text-align: center;
+			background-color: skyblue;
+			font-style: italic;
+		}
+
+		#btn{
+			height: 60px;
+			min-width: 130px;
+			background-color: maroon;
+			border: none;
+			border-radius: 4px;
+			color: white;
+			/*text-decoration: blink;*/
+			font-size: 20px;
+			/*font: bold;*/
+
+		}
+
+		#h1{
+			color: black;
+			font-style: italic;
+		}
+
+		.btn1{
+			margin-right: 80px;
+		}
+
+		.btn2{
+			margin-left: 80px;
+		}
+	</style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="h1">My Gallery</h1>
+	    <button onclick="prev()" class="btn1" id="btn">Previous</button>
+	    <img id="img" src="https://scontent.fdac7-1.fna.fbcdn.net/v/t1.0-9/74687698_621275041741691_6172018955272585216_o.jpg?_nc_cat=105&_nc_sid=a4a2d7&_nc_ohc=rzWgIgUr5o4AX8nBlFd&_nc_ht=scontent.fdac7-1.fna&oh=79e405f0bdc550d998b5bcc3592ee5df&oe=5F6BD2D1" height="300px;">
+	    <button onclick="next()" class="btn2" id="btn">Next</button>
+    </div>
+
+	<script type="text/javascript">
+		var photos=["https://scontent.fdac7-1.fna.fbcdn.net/v/t1.0-9/74687698_621275041741691_6172018955272585216_o.jpg?_nc_cat=105&_nc_sid=a4a2d7&_nc_ohc=rzWgIgUr5o4AX8nBlFd&_nc_ht=scontent.fdac7-1.fna&oh=79e405f0bdc550d998b5bcc3592ee5df&oe=5F6BD2D1", "https://scontent.fdac7-1.fna.fbcdn.net/v/t1.0-9/78054701_639059926629869_8369637000604549120_o.jpg?_nc_cat=108&_nc_sid=a4a2d7&_nc_ohc=3nuZnO3xHagAX-bq024&_nc_ht=scontent.fdac7-1.fna&oh=7aedc9cf36909a744aabeedb61d4052a&oe=5F6B1E84", "https://scontent.fdac7-1.fna.fbcdn.net/v/t1.0-9/78676807_644830159386179_4950690948196597760_o.jpg?_nc_cat=111&_nc_sid=a4a2d7&_nc_ohc=SIrXhzTcNpkAX-KmfgQ&_nc_ht=scontent.fdac7-1.fna&oh=e6adba256fdde4d4c3de53710caa05c6&oe=5F6BBD03", "https://scontent.fdac7-1.fna.fbcdn.net/v/t1.0-9/104401877_786506708551856_7671857693525263458_o.jpg?_nc_cat=107&_nc_sid=a4a2d7&_nc_ohc=5WaoxZ10IgAAX8JTlC3&_nc_ht=scontent.fdac7-1.fna&oh=71cb978d63226059983f5537a5e0700c&oe=5F6D3A5F", "https://scontent.fdac7-1.fna.fbcdn.net/v/t1.0-9/106363160_790976918104835_695651025377875076_o.jpg?_nc_cat=110&_nc_sid=a4a2d7&_nc_ohc=inLy-MOgFigAX_tRbvt&_nc_ht=scontent.fdac7-1.fna&oh=f1c44e77e1016c7658d59cdde119e31c&oe=5F6B0101"]
+
+		var imgTag= document.querySelector("img");
+		var count=0;
+		function next(){
+			count++;
+			if (count>=photos.length) {
+				count=0;
+				imgTag.src= photos[count];
+			}
+			else{
+				imgTag.src= photos[count];
+			}
+		}
+
+		function prev(){
+			count--;
+			if (count<0) {
+				count=photos.length-1;
+				imgTag.src= photos[count];
+			}
+			else{
+				imgTag.src= photos[count];
+			}
+		}
+	</script>
+
+</body>
+</html>
+
+
+ -->
+
+<!-- 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style type="text/css">
+		.para-style{
+			color: maroon;
+			font-size: 3rem;
+			font-weight: bold;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<p id="paraId">this is a paragraph</p>
+	<button onclick="addStyle()">add style</button>
+	<button onclick="removeStyle()">remove style</button>
+
+	<script type="text/javascript">
+		function addStyle(){
+			var myVar= document.querySelector("#paraId");
+			myVar.classList.add("para-style");
+		}
+
+		function removeStyle(){
+			var myVar= document.querySelector("#paraId");
+			myVar.classList.remove("para-style");
+		}
+	</script>
+</body>
+</html>
+
+
+
+ -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>CSS</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			background-color: lightgreen;
+			text-align: center;
+			padding-top: 200px;
+		}
+
+		.h1{
+			font-size: 50px;
+		}
+
+		.myButton{
+			height: 40px;
+			width: 100px;
+			border: none;
+            color: white;
+		}
+
+		#btn1{
+			background-color: maroon;
+		}
+
+		#btn2{
+			background-color: purple;
+		}
+
+		#btn3{
+			background-color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<h1 class="h1">You Have Not Clicked Any Button</h1>
+	<button class="myButton" id="btn1">Button 1</button>
+	<button class="myButton" id="btn2">Button 2</button>
+	<button class="myButton" id="btn3">Button 3</button>
+
+	<script type="text/javascript">
+		document.querySelectorAll(".myButton")[0].addEventListener("click", function(){
+			var text= this.innerHTML;
+			document.querySelector("h1").innerHTML= text+" is clicked";
+		});
+
+		document.querySelectorAll(".myButton")[1].addEventListener("click", function(){
+			var text= this.innerHTML;
+			document.querySelector("h1").innerHTML= text+" is clicked";
+		});
+
+		document.querySelectorAll(".myButton")[2].addEventListener("click", function(){
+			var text= this.innerHTML;
+			document.querySelector("h1").innerHTML= text+" is clicked";
+		});
+	</script>
+</body>
+</html> -->
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css</title>
+	<style type="text/css">
+		body{
+			background-color: #7095b6;
+			font-family: sans-serif;
+		}
+
+		.container{
+			background-color: rgb(240, 240, 240);
+			height: 300px;
+			width: 750px;
+			margin-left: 300px;
+			margin-top: 200px;
+			text-align: center;
+			/*padding: 10px;*/
+			/*font-size: 30px;*/
+			/*padding-top: 5px;*/
+			/*margin-top: 10px;*/
+		}
+
+		#first{
+			/*margin-top: 20px;*/
+			padding-top: 18px;
+			font-size: 22px;
+			font-weight: 4px;
+			font-weight: bold;
+			/*font-style: inherit;*/
+			/*font*/
+		}
+
+		.message-form{
+			/*display: inline-grid;*/
+			align-items: center;
+		}
+
+		#submitBtn{
+			margin-top: 20px;
+			height: 50px;
+			/*max-width: 100px;*/
+			min-width: 110px;
+			border-radius: 4px;
+			border-color: #7095b6;
+			background-color: #7095b6;
+			font-size: 20px;
+			color: white;
+		}
+
+		#submitBtn:hover{
+			color: black;
+		}
+
+		#message{
+			height: 40px;
+			width: 700px;
+			/*border-radius: 4px;*/
+			/*border-color: inherit;*/
+		}
+
+		#second{
+			/*font-size: 22px;*/
+			/*margin-top: 20px;*/
+			/*background: red;*/
+			display: none;
+		}
+
+		#third{
+			font-size: 22px;
+			font-weight: 4px;
+			font-weight: bold;
+			margin-top: 18px;
+		}
+
+		#forth{
+			font-size: 27px;
+			font-weight: 4px;
+			font-weight: bold;
+			color: #7095b6;
+			/*text-decoration-style: capitalize;*/
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p class="text-capitalize" id="first">A Messge You Would Like To Pass</p>
+		<form action="" id="message-form">
+			<input type="text" id="message" class="w-100 my-3 p-2">
+			<input type="submit" id="submitBtn" class="btn btn-lg">
+		</form>
+		<h5 class="p-2 alert alert-danger my-3 text-capitalize feedback" id="second">please enter a value to pass</h5>
+		<p class="text-capitalize my-3" id="third">Last Message Delivered</p>
+		<p class="message-content text-uppercase" id="forth">Hello World</p>
+	</div>
+
+	<script type="text/javascript">
+			const form= document.querySelector("#message-form")
+			form.addEventListener("submit", function(e){
+				e.preventDefault()
+
+				const message= document.querySelector("#message")
+				const feedback= document.querySelector(".feedback")
+				const messageContent= document.querySelector(".message-content")
+
+				if(message.value===""){
+					feedback.classList.add("show")
+					// setTimeout(function(){
+					// 	feedback.classList.remove("show")
+					// },2000)
+				}
+				else{
+					messageContent.textContent=message.value
+					message.value=""
+				}
+			})
+	</script>
+
+</body>
+</html>
+ --><!-- 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css</title>
+	<style type="text/css">
+		body {
+  background: url('http://lorempixel.com/800/200/business/5/') center center fixed;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 0 0 15px #fff;
+  
+}
+
+output{
+  display:block;
+}
+
+
+
+
+	</style>
+</head>
+<body>
+	<h1>Savings Investment</h1>
+<h2>How much will I have if I invest this much for this long?</h2>
+
+<input type="text" placeholder="First Name" class="first-js" />
+<input type="text" placeholder="Last Name" class="last-js" />
+<input type="text" placeholder="Principal" class="principal-js" />
+<input type="text" placeholder="Annual Rate (ex: .08)" class="rate-js" />
+<input type="text" placeholder="Number of Years" class="years-js" />
+<input type="text" placeholder="Periods per Year" class="periods-js" />
+<input type="button" value="Submit" class="button-js" />
+
+<output></output>
+
+<script type="text/javascript">
+	
+var first = document.querySelector('.first-js');
+var last = document.querySelector('.last-js');
+var amount = document.querySelector('.principal-js');
+var rate = document.querySelector('.rate-js');
+var years = document.querySelector('.years-js');
+var months = document.querySelector('.periods-js');
+var button = document.querySelector('.button-js');
+var output = document.querySelector('output');
+var futurevalue = function(a, r, m, y) {
+  var value = a * Math.pow(1 + (r / m), (y * m));
+  return value;
+};
+
+
+button.addEventListener('click', function() {
+  var fn = first.value;
+  var ln = last.value;
+  var a = parseFloat(amount.value);
+  var r = parseFloat(rate.value);
+  var m = parseFloat(months.value);
+  var y = parseFloat(years.value);
+  var result = futurevalue(a, r, m, y);
+  var e = result - a;
+  output.textContent = fn + " " + ln + " the future value of your investment = " + "$" + result.toFixed(2) + ".  That's $" + e + " in interest earned!";
+});
+</script>
+</body>
+</html> -->
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css</title>
+	<style type="text/css">
+		
+	</style>
+	<style type="text/css">
+		body {
+			/*background: url('http://lorempixel.com/800/200/nature/4/') center center fixed;*/
+			background-attachment: fixed;
+			background-position: top center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: #fff;
+			text-shadow: 0 0 10px #000;
+		}
+	</style>
+</head>
+<body>
+	<h1>Convert Fahrenheit to Celsius</h1>
+
+	<form>
+		<input type="text" class="js-one"/>
+		<input type="button" class="js-button" value="Convert"/>
+	</form>
+
+	<script type="text/javascript">
+		var one= document.querySelector('.js-one');
+		var button= document.querySelector('.js-button');
+
+		button.addEventListener('click', function() {
+			var first= parseInt(one.value);
+			var result= (first - 32) / 1.8;
+			if(first!==NaN){
+				alert(result);
+			}
+			else{
+				alert("Plzz enter the input");
+			}
+		});
+	
+	</script>
+</body>
+</html>
+
+
+ -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style type="text/css">
+		.output{
+			height: 50px;
+			width: 150px;
+			background-color: violet;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Is Your Car Economical?</h1>
+	<h2>Find out the miles-per-gallon here:</h2>
+
+	<input type="text" placeholder="Gallons of Gas" class="gallons-js"/>
+	<input type="text" placeholder="Starting Milage" class="starting-js"/>
+	<input type="text" placeholder="Finishing Milage" class="finishing-js"/>
+	<input type="button" value="submit" class="go-js"/>
+	<output class="output"></output>
+
+	<script type="text/javascript">
+		var gallon= document.querySelector('.gallons-js');
+		var start= document.querySelector('.starting-js');
+		var finish= document.querySelector('.finishing-js');
+		var button= document.querySelector('.go-js');
+		var output= document.querySelector('output');
+		var result= function(s,f,g){
+			var math= (s-f)/g;
+			return math;
+		};
+
+		button.addEventListener('click', function(){
+			var start= parseFloat(start.value);
+			var finish= parseFloat(finish.value);
+			var gallon= parseFloat(gallon.value);
+			var ans= result(s,f,g);
+			output.textContent= ans.toFixed(2);
+		});
+	</script>
+</body>
+</html>
+
+ -->
+
+<!-- <!-- 
+
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>CSS</title>
+ 	<style type="text/css">
+ 		body {
+ 			/*background: url('http://lorempixel.com/800/200/nature/10/') center center fixed;*/
+ 			background-attachment: fixed;
+ 			background-position: top center;
+ 			background-repeat: no-repeat;
+ 			background-size: cover;
+ 			color: black;
+ 		}
+
+ 	</style>
+ </head>
+ <body>
+ 	<h1>Volume of a cylinder</h1>
+ 	<form>
+ 		<input type="text" class="js-radius" placeholder="Radius"/>
+ 		<input type="text" class="js-height" placeholder="Height"/>
+ 		<input type="button" value="go" class="js-go"/>
+ 	</form>
+
+ 	<script type="text/javascript">
+ 		var radius= document.querySelector(".js-radius");
+ 		var height= document.querySelector(".js-height");
+ 		var button= document.querySelector(".js-button");
+ 		var f= function(){
+ 			var radius= parseInt(radius.value);
+ 			var height= parseInt(height.value);
+ 			
+ 	</script>
+ </body>
+ </html>
+ -->
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+</head>
+<body>
+	
+</body>
+</html>
+
+
+ -->
+
+
+
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>CSS</title>
+ 	<style type="text/css">
+ 		:root {
+ 			--step: calc(100% / 7.5);
+ 			--side: 30vmin;
+ 			--offset: 15vmin;
+ 			--offset-neg: -15vmin;
+ 			font-size: 16px;
+ 		}
+
+ 		body {
+ 			min-height: 100vh;
+ 			display: flex;
+ 			justify-content: center;
+ 			align-items: center;
+ 			perspective: 300px;
+ 			perspective-origin: center center;
+ 			overflow: hidden;
+ 			background: #000;
+ 		}
+
+ 		.side,
+ 		.container {
+ 			width: var(--side);
+ 			height: var(--side);
+ 		}
+
+ 		.container {
+ 			transform-style: preserve-3d;
+ 			animation: rotate 10s infinite linear;
+
+ 			&:hover {
+ 				animation-play-state: paused;
+ 			}
+ 		}
+
+ 		.side {
+ 			position: absolute;
+ 			transform-style: preserve-3d;
+ 			background: conic-gradient(
+ 				teal,
+ 				purple,
+ 				crimson,
+ 				tomato,
+ 				gold,
+ 				yellowgreen,
+ 				mediumaquamarine,
+ 				teal
+ 				);
+
+ 			mask-image: repeating-radial-gradient(
+ 				rgba(0, 0, 0, 0) 0,
+ 				rgba(0, 0, 0, 0) calc(var(--step) * 1),
+ 				black 0,
+ 				black calc(var(--step) * 1.5),
+ 				rgba(0, 0, 0, 0) 0
+ 				);
+ 			mask-size: 50% 50%;
+ 			mask-position: center center;
+ 		}
+
+ 		.back {
+ 			transform: translateZ(var(--offset-neg)) rotateY(180deg);
+ 		}
+
+ 		.left {
+ 			transform: translateX(var(--offset-neg)) rotateY(90deg);
+ 		}
+
+ 		.right {
+ 			transform: translateX(var(--offset)) rotateY(-90deg) rotateZ(90deg);
+ 		}
+
+ 		.top {
+ 			transform: translateY(var(--offset-neg)) rotateX(90deg) rotateZ(-90deg);
+ 		}
+
+ 		.bottom {
+ 			transform: translateY(var(--offset)) rotateX(90deg) rotateZ(90deg);
+ 		}
+
+ 		.front {
+ 			transform: translateZ(var(--offset)) rotateZ(90deg);
+ 		}
+
+ 		@keyframes rotate {
+ 			100% {
+ 				transform: rotateX(360deg) rotateY(-360deg) rotateZ(360deg);
+ 			}
+ 		}
+ 		
+ 	</style>
+ </head>
+ <body>
+ 	<div class="container">
+ 		<div class="back side"></div>
+ 		<div class="left side"></div>
+ 		<div class="right side"></div>
+ 		<div class="top side"></div>
+ 		<div class="bottom side"></div>
+ 		<div class="front side"></div>
+ 	</div>
+
+ </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

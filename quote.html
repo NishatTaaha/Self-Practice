@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style type="text/css">
+		body{
+			background-color: #b09e99;
+			font-family: sans-serif;
+		}
+
+		.quote-container{
+			background: rgba(255, 255, 255, 0.5);
+			margin-top: 150px;
+			margin-left: 310px;
+			padding: 60px;
+			height: 300px;
+			max-width: 600px;
+			/*text-align: center;*/
+		}
+
+		.btn{
+			margin-left: 200px; 
+			height: 55px;
+			width: 220px;
+			background-color: #64b6ac;
+			color: white;
+			border-top: 2px solid #64b6ac;
+			border-left: 2px solid #64b6ac;
+			border-right: 2px solid black;
+			border-bottom: 2px solid black;
+			cursor: pointer;
+			font-size: 25px;
+		}
+
+		.btn:hover{
+			background: #b09e99;
+			border-color: #b09e99 ;
+			color: #333333;
+		}
+
+		.h3{
+			color: grey;
+			font-size: 30px;
+		}
+
+		.author{
+			font-size: 20px;
+			/*margin-left: 500px;*/
+			/*margin-top: 800px;*/
+			/*margin-right: 50px;*/
+			padding-left: 450px;
+			color: #64b6ac;
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+	<div class="quote-container">
+		<button class="btn" id="generate-btn">Generate Quote</button>
+		<h3 class="h3"><span class="quote-icon mr-3"><i class="fas fa-quote-left fa-3x"></i></span><span id="quote"><p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur sint iste optio placeat dolor labore, reprehenderit ipsum aspernatur blanditiis maiores.</p></span></h3>
+        <h5 class="author">- <span class="quote-author ml-3">Author</span></h5>
+	</div>
+
+	<script type="text/javascript">
+		(function(){
+			const quotes=[
+			{
+				quote:
+				"Life is too short and sweet to be spent by cribbing and complaining about things. Here are some random quotes about the most wonderful gift that we've got",
+                 author: "Life"
+			},
+			{
+				 quote:
+                 "Humor is richly rewarding to the person who employs it. It has some value in gaining and holding attention. But it has no persuasive value at all",
+                  author: "John Kenneth"
+			},
+			{
+				quote:
+				"God save me from my friends. I can protect myself from my enemies.",
+				author: "Claude Louis"
+			},
+			{
+				quote:
+				"The price of anything is the amount of life you exchange for it.",
+				author: "David Thoreau"
+			},
+			{
+				quote:
+				"Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance. ",
+				author: "Charles Lindbergh"
+			},
+			{
+				quote:
+				"A critic is someone who never actually goes to the battle, yet who afterwards comes out shooting the wounded.",
+				author: "Tyne Daly"
+			}
+			];
+
+			const btn= document.getElementById("generate-btn");
+			btn.addEventListener("click", function(){
+				let random=Math.floor(Math.random()*quotes.length);
+				console.log(random);
+
+				document.getElementById("quote").textContent= quotes[random].quote;
+				document.querySelector("author").textContent= quotes[random].author;
+			});
+		})();
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

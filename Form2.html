@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form2</title>
+	<style>
+		body{
+			text-align: center;
+			background-color: lightblue;
+		}
+
+		h1{
+			font-size: 48px;
+		}
+
+		p{
+			font-size: 22px;
+			font-weight: bold;
+		}
+
+		.form-rows{
+			position: static;
+			display: block;
+			/*font-size: bold;*/
+		}
+
+		.master-div-style{
+			margin: auto;
+			width: 800px;
+			background-color: lightgrey;
+			border-radius: 10px;
+			padding: 20px 10px 10px 10px;
+			/*font-size: bold;*/
+		}
+
+		.fields{
+			display: inline-block;
+			text-align: left;
+			width: 48%;
+			vertical-align: middle;
+			/*font-size: bold;*/
+		}
+
+		.labels{
+			display: inline-block;
+			text-align: right;
+			width: 40%;
+			padding: 5px;
+			vertical-align: top;
+			margin-top: 10px;
+			/*font-style: bold;*/
+			/*font-size: bold;*/
+
+		}
+
+		.input-fields{
+			height: 20px;
+			width: 280px;
+			padding: 5px;
+			margin: 10px;
+			border: 1px solid #c0c0c0;
+			border-radius: 4px;
+			/*font-size: bold;*/
+		}
+
+		.dropdown{
+			height: 35px;
+			width: 140px;
+			padding: 5px;
+			margin: 15px 10px 10px 10px;
+			border: 1px solid #c0c0c0;
+			border-radius: 4px;
+			/*font-size: bold;*/
+		}
+
+	    #time{
+	    	text-decoration: none;
+	    	font-weight: normal;
+	    	position: relative;
+	    	text-decoration: none;
+	    	margin-left: 8px;
+	    	display: block;
+	    	/*font-size: bold;*/
+	    }
+
+	    #a{
+	    	font-size: normal;
+	    }
+
+
+
+
+	</style>
+</head>
+<body>
+	<h1 id="title">Good Vibes Form</h1>
+	<div class="master-div-style">
+		<p id="description">Tell us something positive that happened to you today.</p>
+		<form action="/description something" id="survey-form">
+			<div class="form-rows">
+				<div class="labels">
+					<label for="name" id="name-label">Name</label>
+				</div>
+				<div class="fields">
+					<input type="text" name="name" id="name" class="input-fields" placeholder="Enter your name" required>
+				</div>
+			</div>
+
+			<div class="form-rows">
+				<div class="labels">
+					<label for="email" id="emai-label">Email</label>
+				</div>
+				<div class="fields">
+					<input type="email" name="email" id="email" class="input-fields" placeholder="Enter your email address">
+				</div>
+			</div>
+
+			<div class="form-rows">
+				<div class="labels">
+					<label for="dropdown" id="dropdown-label">Where did it heppen?</label>
+				</div>
+				<div class="fields">
+					<select name="Location" id="dropdown" class="dropdown">
+						<option value="home">At home</option>
+						<option value="commute">On my commute</option>
+						<option value="work">At work</option>
+						<option value="outside">On the street</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-rows">
+				<div class="labels">
+					<label for="time-of-day">At what time of day did it happen?</label>
+				</div>
+				<div class="fields">
+					<p id="time">
+						<input type="radio" name="time">Morning<br>
+						<input type="radio" name="time">Afternoon<br>
+						<input type="radio" name="time">Evening<br>
+					</p>
+				</div>
+			</div>
+
+			<div class="form-rows">
+				<div class="labels">
+					<label for="feelings"> What emotions did you experience?<br>(select all that apply)</label>
+					<div class="fields">
+						<ul class="feelings" style="list-style: none;">
+							<li class="radio">
+								<label>
+									<input type="checkbox" name="feeling-check" value="2" >
+								</label>
+							</li>
+							
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

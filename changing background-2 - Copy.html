@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style>
+		body{
+			font-family: sans-serif;
+			background-color: lightblue;
+		}
+
+		.main{
+			/*background-color: lightblue;*/
+			/*display: cover;*/
+			margin-top: 70px;
+			margin-left: 400px;
+		}
+
+		#heading{
+			font-size: 50px;
+			color: darkblue;
+			margin-right: 390px;
+		}
+
+        .para{
+        	font-size: 35px;
+
+        }
+
+        .lab{
+        	font-size: 20px;
+        }
+
+        .btn{
+        	font-size: 20px;
+        	line-height: 20px;
+        }
+
+        .bl{
+        	display: inline-grid;
+        	/*line-height: 40px;*/
+        	/*margin: 40px;*/
+        }
+
+        .total{
+        	display: inline-flex;
+        	/*margin: 40px;*/
+        }
+
+        #bl2{
+        	margin-left: 25px;
+        }
+
+        #yellow{
+        	background-color: yellow;
+        }
+
+        #pink{
+        	background-color: pink;
+        }
+
+        #purple{
+        	background-color: purple;
+        }
+
+        #violet{
+        	background-color: violet;
+        }
+
+        #lime{
+        	background-color: lime;
+        }
+
+        #grey{
+        	background-color: grey;
+        }
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<h1 id="heading">My jaVaScRipT PrOjEct</h1>
+	    <p class="para">Hi!! I am Nishat Taaha!! :)</p>
+        <div class="total">
+	         <div class="bl">
+	    	     <label class="lab">Changing Background: </label>
+	    	     <button class="btn" type="button" onclick="changeBodyBg('Yellow')" id="yellow">Yellow</button>
+	    	     <button class="btn" type="button" onclick="changeBodyBg('pink')" id="pink">pink</button>
+	    	     <button class="btn" type="button" onclick="changeBodyBg('purple')" id="purple">purple</button>
+	         </div><br>
+
+	        <div class="bl" id="bl2">
+	    	     <label class="lab">Changing Heading Background To: </label>
+	    	     <button class="btn" type="button" onclick="changeHeadingBg('violet')" id="violet">Violet</button>
+	    	<button class="btn" type="button" onclick="changeHeadingBg('lime')" id="lime">Lime</button>
+	    	     <button class="btn" type="button" onclick="changeHeadingBg('grey')" id="grey">grey</button>
+	         </div>
+	    </div>
+	</div>
+
+	<script>
+		function changeBodyBg(color){
+			document.body.style.background= color;
+		}
+
+		function changeHeadingBg(color){
+			document.getElementById("heading").style.background=color;
+		}
+	</script>
+</body>
+</html>
